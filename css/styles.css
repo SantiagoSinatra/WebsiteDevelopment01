@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    /* outline: dotted red 1.5px; */
 }
 
 body {
@@ -15,4 +16,26 @@ body {
     align-items: center;
     align-content: center;
     flex-wrap: wrap;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    min-height: 60px;
+    padding: 0 10px;
+    width: 100%;
+    color: white;
+}
+
+header.flex {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+nav span {
+    margin: 0 5px;
+}
+
+nav span:last-child {
+    margin-right: 0;
 }
